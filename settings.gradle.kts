@@ -1,3 +1,3 @@
-rootProject.name = "web-java"
+rootProject.name = "web-java-lib-demo"
 include("dby-lib")
 include("dby-app")
