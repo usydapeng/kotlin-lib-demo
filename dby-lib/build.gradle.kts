@@ -3,6 +3,7 @@ plugins {
   `maven-publish`
   `java-library`
   signing
+  id("org.jetbrains.dokka") version "1.4.10.2"
 }
 
 group = "com.dby.jweb"
@@ -21,6 +22,7 @@ compileTestKotlin.kotlinOptions.jvmTarget = "1.8"
 
 repositories {
   mavenCentral()
+  jcenter()
 }
 
 dependencies {
@@ -83,8 +85,6 @@ publishing {
 //  sign(publishing.publications["mavenJava"])
 //}
 
-tasks.javadoc {
-  if (JavaVersion.current().isJava9Compatible) {
-    (options as StandardJavadocDocletOptions).addBooleanOption("html5", true)
-  }
+tasks.dokkaHtml.configure {
+  outputDirectory.set(buildDir.resolve("dokka"))
 }
