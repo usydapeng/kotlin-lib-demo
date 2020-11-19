@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.dby.jweb"
-version = "0.0.7"
+version = "0.0.8"
 
 java {
   withJavadocJar()
@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-  implementation(kotlin("stdlib"))
+  api(kotlin("stdlib"))
 }
 
 publishing {
@@ -73,10 +73,12 @@ publishing {
   }
   repositories {
     maven {
-      // change URLs to point to your repos, e.g. http://my.org/repo
-      val releasesRepoUrl = uri("$buildDir/repos/releases")
-      val snapshotsRepoUrl = uri("$buildDir/repos/snapshots")
-      url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+      name = "kotlin-lib-demo"
+      url = uri("https://github.com/usydapeng/kotlin-lib-demo")
+      credentials {
+        username = System.getenv("PACKAGES_ACTOR")
+        password = System.getenv("PACKAGES_TOKEN")
+      }
     }
   }
 }

@@ -12,3 +12,4 @@ Exception in thread "main" java.lang.NoClassDefFoundError: kotlin/jvm/internal/I
 >
 > - [理解Kotlin中的 @JvmOverloads、@JvmStatic、@JvmName、@JvmField注解](https://www.jianshu.com/p/0d312fac3a65)
 > - [JvmName 注解在 Kotlin 中的应用](https://droidyue.com/blog/2019/09/01/jvm-name-annotations-kotlin/)
+> - [implementation、api、compileOnly的区别](https://docs.gradle.org/current/userguide/java_library_plugin.html)
