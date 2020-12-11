@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.dby.jweb"
-version = "0.0.8"
+version = "0.0.1"
 
 java {
   withJavadocJar()
@@ -76,8 +76,9 @@ publishing {
       name = "kotlin-lib-demo"
       url = uri("https://github.com/usydapeng/kotlin-lib-demo")
       credentials {
-        username = System.getenv("PACKAGES_ACTOR")
-        password = System.getenv("PACKAGES_TOKEN")
+        username = System.getenv("GITHUB_ACTOR")
+        password = System.getenv("GITHUB_TOKEN")
+        println("username: $username, password: $password")
       }
     }
   }
