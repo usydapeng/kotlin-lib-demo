@@ -78,9 +78,7 @@ publishing {
       credentials {
         username = System.getenv("GITHUB_ACTOR")
         password = System.getenv("GITHUB_TOKEN")
-        val helloWorld = System.getenv("HELLO_WORLD")
-        val helloWorldToYou = System.getenv("HELLO_WORLD_YOU")
-        println("username: $username, password: $password, helloWorld: $helloWorld, helloWorldToYou: $helloWorldToYou")
+        println("username: $username, password: $password")
       }
     }
   }

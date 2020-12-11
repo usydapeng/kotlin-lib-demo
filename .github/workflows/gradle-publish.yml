@@ -19,7 +19,6 @@ jobs:
       - name: Build with Gradle
         run: gradle dby-lib:build
       - name: Publish to GitHub Packages
-        run: gradle dby-lib:publish
+        run: gradle dby-lib:publish --stacktrace
         env:
           GITHUB_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
-          HELLO_WORLD_YOU: ${{ secrets.HELLO_WORLD }}
