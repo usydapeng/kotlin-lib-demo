@@ -6,8 +6,8 @@ plugins {
   id("org.jetbrains.dokka") version "1.4.10.2"
 }
 
-group = "com2.dby.jweb"
-version = "0.0.1-1"
+group = "com.dby.jweb"
+version = "0.0.1"
 
 java {
   withJavadocJar()
@@ -43,9 +43,9 @@ publishing {
         }
       }
       pom {
-        name.set("My Library")
-        description.set("A concise description of my library")
-        url.set("http://www.example.com/library")
+        name.set("kotlin library")
+        description.set("A library of kotlin")
+        url.set("https://github.com/usydapeng/kotlin-lib-demo")
         properties.set(mapOf(
           "myProp" to "value",
           "prop.with.dots" to "anotherValue"
@@ -58,15 +58,15 @@ publishing {
         }
         developers {
           developer {
-            id.set("johnd")
-            name.set("John Doe")
-            email.set("john.doe@example.com")
+            id.set("usydapeng")
+            name.set("Wang Zunpeng")
+            email.set("usydapeng@gmail.com")
           }
         }
         scm {
-          connection.set("scm:git:git://example.com/my-library.git")
-          developerConnection.set("scm:git:ssh://example.com/my-library.git")
-          url.set("http://example.com/my-library/")
+          connection.set("scm:git:git://github.com/usydapeng/kotlin-lib-demo.git")
+          developerConnection.set("scm:git@github.com:usydapeng/kotlin-lib-demo.git")
+          url.set("https://github.com/usydapeng/kotlin-lib-demo")
         }
       }
     }
@@ -74,7 +74,7 @@ publishing {
   repositories {
     maven {
       name = "kotlin-lib-demo"
-      url = uri("https://github.com/usydapeng/kotlin-lib-demo")
+      url = uri("https://maven.pkg.github.com/usydapeng/kotlin-lib-demo")
       credentials {
         username = System.getenv("GITHUB_ACTOR")
         password = System.getenv("GITHUB_TOKEN")
