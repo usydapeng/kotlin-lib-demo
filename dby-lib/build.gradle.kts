@@ -6,8 +6,8 @@ plugins {
   id("org.jetbrains.dokka") version "1.4.10.2"
 }
 
-group = "com.dby.jweb"
-version = "0.0.1"
+group = "com2.dby.jweb"
+version = "0.0.1-1"
 
 java {
   withJavadocJar()

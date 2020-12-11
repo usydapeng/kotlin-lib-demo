@@ -2,8 +2,8 @@ plugins {
   java
 }
 
-group = "com2.dby.jweb"
-version = "0.0.1-1"
+group = "com.dby.jweb"
+version = "0.0.1"
 
 java {
   sourceCompatibility = org.gradle.api.JavaVersion.VERSION_1_8
