@@ -15,10 +15,11 @@ Exception in thread "main" java.lang.NoClassDefFoundError: kotlin/jvm/internal/I
 > - [implementation、api、compileOnly的区别](https://docs.gradle.org/current/userguide/java_library_plugin.html)
 > - [发布jar到jcenter](https://github.com/bintray/gradle-bintray-plugin)
 
-https://reflectoring.io/guide-publishing-to-bintray-with-gradle/
-http://bastienpaul.fr/wordpress/2019/02/08/publish-a-kotlin-lib-with-gradle-kotlin-dsl/
-https://github.com/bastienpaulfr/geojson-kotlin/blob/master/lib/build.gradle.kts
-https://serpro69.medium.com/publishing-a-kotlin-library-to-your-bintray-repo-using-gradle-kotlin-dsl-bdeaed54571a
-https://github.com/bintray/gradle-bintray-plugin
-https://github.com/usydapeng/weixin_sdk/blob/master/build.gradle
+> build kotlin library to jcenter
+> - [demo1](https://reflectoring.io/guide-publishing-to-bintray-with-gradle/)
+> - [demo2](http://bastienpaul.fr/wordpress/2019/02/08/publish-a-kotlin-lib-with-gradle-kotlin-dsl/)
+> - [demo3](https://github.com/bastienpaulfr/geojson-kotlin/blob/master/lib/build.gradle.kts)
+> - [demo4](https://serpro69.medium.com/publishing-a-kotlin-library-to-your-bintray-repo-using-gradle-kotlin-dsl-bdeaed54571a)
+> - [demo5](https://github.com/bintray/gradle-bintray-plugin)
+> - [demo6](https://github.com/usydapeng/weixin_sdk/blob/master/build.gradle)
 

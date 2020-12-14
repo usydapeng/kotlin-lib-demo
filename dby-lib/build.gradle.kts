@@ -113,7 +113,7 @@ publishing {
     repositories {
       maven {
         name = artifactName
-        url = uri(githubUrl)
+        url = uri("https://maven.pkg.github.com/usydapeng/kotlin-lib-demo")
         credentials {
           username = System.getenv("GITHUB_ACTOR")
           password = System.getenv("GITHUB_TOKEN")
