@@ -127,8 +127,9 @@ publishing {
 bintray {
   user = System.getenv("BINTRAY_USER")
   key = System.getenv("BINTRAY_KEY")
-  println("jcenter user: $user, key: $key")
-  publish = true
+  // TODO mean
+  publish = System.getenv("BINTRAY_PUBLISH") != null
+  println("jcenter user: $user, key: $key, publish to jcenter: $publish")
   setPublications(publicationName)
   pkg.apply {
     repo = "maven"
