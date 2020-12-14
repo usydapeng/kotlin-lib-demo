@@ -1,5 +1,6 @@
 plugins {
   java
+  `maven`
 }
 
 group = "com.dby.jweb"
@@ -11,11 +12,12 @@ java {
 
 repositories {
   mavenLocal()
+  maven("https://maven.aliyun.com/repository/public/")
   mavenCentral()
 }
 
 dependencies {
-  implementation("com.dby.jweb:jweb-lib:0.0.6")
+  implementation("com2.dby.jweb:jweb-lib:0.0.1-1")
   testImplementation("junit", "junit", "4.12")
 }
 
